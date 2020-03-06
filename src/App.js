@@ -23,8 +23,10 @@ const App = () => {
         setMostRecent(allData[i])
         setWeek(allData[i][0].week)
         i++
+      } else {
+        i = 0
       }
-    }, 5000)
+    }, 3000)
   }, [])
 
   return (
